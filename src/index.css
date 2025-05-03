@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 480px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 32px 16px 100px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.image-wrapper img {
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #F08000;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #F08000;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F08000;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 30px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  width: calc(100% - 40px);
+  max-width: 400px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d76f00;
+}
+
+.info-card {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  background-color: #F08000;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.info-card:hover {
+  transform: scale(1.02);
+}
+
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  width: 44%;
+  height: 100%;
+}
+.card-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.card-text {
+  width: 56%;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
